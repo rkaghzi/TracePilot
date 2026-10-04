@@ -1,4 +1,4 @@
-# TracePilot AI — MVP
+# TracePilot AI -- MVP
 
 TracePilot discovers how an operation actually runs from event/process data, identifies bottlenecks and recommends high-value AI automation opportunities.
 
