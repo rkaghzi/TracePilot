@@ -1,0 +1,29 @@
+flowchart TD
+    U[User / Operations Team] --> C[CSV / Event Logs]
+    C --> N[Schema Detection & Normalization]
+    N --> P[Process Intelligence Engine]
+    P --> G[Process Graph]
+    P --> B[Bottleneck & Variant Analysis]
+    G --> R[Automation Opportunity Ranker]
+    B --> R
+    S[SOPs / Policies / Documents] --> E[Embedding + Vector Search]
+    E --> A[Open-Source LLM Agent]
+    R --> A
+    A --> H{Risk / Policy Check}
+    H -->|Low risk| X[Tool / API / RPA Execution]
+    H -->|High risk| V[Human Approval]
+    V --> X
+    X --> L[Audit Log + Outcome]
+    L --> F[Feedback / Evaluation]
+    F --> P
+    F --> A
+
+    subgraph Open_Source_Stack
+      P
+      E
+      A
+      F
+    end
+
+    style H fill:#fff2cc,stroke:#b8860b
+    style V fill:#f4cccc,stroke:#990000
