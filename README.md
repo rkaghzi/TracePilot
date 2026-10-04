@@ -30,5 +30,5 @@ CSV process log → schema detection → event normalization → process transit
 5. Add human approval thresholds and an immutable audit log.
 6. Add connectors for ERP/CRM/ticketing/email systems.
 
-The MVP intentionally works without an API key so it can run it immediately.
+The MVP intentionally works without an API key so it can run immediately.
 #
